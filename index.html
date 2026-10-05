@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pibi Tech | Data & Business Intelligence Solutions</title>
+  <!-- Google Fonts: Plus Jakarta Sans, Inter & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="header">
+    <div class="nav-container">
+      <div class="logo">
+        <div class="logo-mark">
+          <img src="logo.png" alt="Pibi Tech Logo" class="logo-img" />
+        </div>
+        <span class="logo-text">Pibi <span>Tech</span></span>
+      </div>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#capabilities" class="nav-link">Capabilities</a>
+        <a href="#intelligence" class="nav-link">Intelligence</a>
+        <a href="#industries" class="nav-link">Industries</a>
+        <a href="#usecases" class="nav-link">Use Cases</a>
+        <a href="#technology" class="nav-link">Technology</a>
+        <a href="#company" class="nav-link">Company</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-nav">
+          <span>Talk to Our Experts</span>
+          <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Hero Section -->
+  <main>
+    <section class="hero-section" id="home">
+      <div class="hero-container">
+        
+        <!-- Left Content -->
+        <div class="hero-left">
+          <h1 class="hero-title">
+            Transforming<br/>
+            Data into<br/>
+            <span class="highlight">Insights,</span><br/>
+            <span class="highlight">Predictions, and</span><br/>
+            Intelligent <span class="highlight">Decisions</span>
+          </h1>
+
+          <p class="hero-description">
+            We combine data science, advanced analytics, business intelligence, and decision intelligence to transform complex business data into meaningful insights. Our solutions help organizations understand performance, predict outcomes, optimize operations, and make informed decisions.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary">
+              <span>Talk to Our Experts</span>
+              <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#capabilities" class="btn btn-outline">
+              <span>Explore Our Capabilities</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Content: Interactive Dashboard Card -->
+        <div class="hero-right">
+          <div class="dashboard-card" id="dashboardCard">
+            
+            <!-- Card Header -->
+            <div class="dash-header">
+              <div class="dash-title-wrap">
+                <div class="dash-title-row">
+                  <h2 class="dash-title" id="dashTitle">Business Intelligence</h2>
+                  <div class="dash-dropdown-trigger" title="Switch Intelligence Domain">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="#94a3b8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+                <p class="dash-subtitle" id="dashSubtitle">Performance overview &bull; Updated today</p>
+              </div>
+              <div class="dash-badge">
+                <span class="pulse-dot"></span>
+                <span>Live</span>
+              </div>
+            </div>
+
+            <!-- KPI Metric Cards (Interactive) -->
+            <div class="kpi-grid">
+              
+              <!-- Metric 1 -->
+              <div class="kpi-item active" data-metric="revenue" id="kpiRevenue">
+                <div class="kpi-top">
+                  <div class="kpi-icon-wrap">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M12 6v12M15 9.5a2.5 2.5 0 0 0-5 0c0 2.5 5 1.5 5 4a2.5 2.5 0 0 1-5 0"></path>
+                    </svg>
+                  </div>
+                  <div class="kpi-growth growth-up">
+                    <span class="growth-arrow">&nearr;</span>
+                    <span id="kpiGrowth1">8.4%</span>
+                  </div>
+                </div>
+                <div class="kpi-label">REVENUE</div>
+                <div class="kpi-value" id="kpiVal1">$4.82M</div>
+              </div>
+
+              <!-- Metric 2 -->
+              <div class="kpi-item" data-metric="conversion" id="kpiConversion">
+                <div class="kpi-top">
+                  <div class="kpi-icon-wrap">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <circle cx="12" cy="12" r="6"></circle>
+                      <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                  </div>
+                  <div class="kpi-growth growth-up">
+                    <span class="growth-arrow">&nearr;</span>
+                    <span id="kpiGrowth2">2.1%</span>
+                  </div>
+                </div>
+                <div class="kpi-label">CONVERSION</div>
+                <div class="kpi-value" id="kpiVal2">12.6%</div>
+              </div>
+
+              <!-- Metric 3 -->
+              <div class="kpi-item" data-metric="customers" id="kpiCustomers">
+                <div class="kpi-top">
+                  <div class="kpi-icon-wrap">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                  <div class="kpi-growth growth-up">
+                    <span class="growth-arrow">&nearr;</span>
+                    <span id="kpiGrowth3">6.8%</span>
+                  </div>
+                </div>
+                <div class="kpi-label">CUSTOMERS</div>
+                <div class="kpi-value" id="kpiVal3">18,420</div>
+              </div>
+
+              <!-- Metric 4 -->
+              <div class="kpi-item" data-metric="performance" id="kpiPerformance">
+                <div class="kpi-top">
+                  <div class="kpi-icon-wrap">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </div>
+                  <div class="kpi-growth growth-up">
+                    <span class="growth-arrow">&nearr;</span>
+                    <span id="kpiGrowth4">3.7%</span>
+                  </div>
+                </div>
+                <div class="kpi-label">PERFORMANCE</div>
+                <div class="kpi-value" id="kpiVal4">94.2</div>
+              </div>
+
+            </div>
+
+            <!-- Charts Section -->
+            <div class="charts-row">
+              
+              <!-- Line Chart Card -->
+              <div class="chart-box line-chart-box">
+                <div class="chart-header">
+                  <span class="chart-title" id="lineChartTitle">Revenue &amp; forecast</span>
+                  <span class="chart-badge" id="chartTimeframe">7 months</span>
+                </div>
+                <div class="chart-canvas-container">
+                  <svg class="line-svg" id="lineSvg" viewBox="0 0 340 130" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#00a8b5" stop-opacity="0.25"/>
+                        <stop offset="100%" stop-color="#00a8b5" stop-opacity="0.0"/>
+                      </linearGradient>
+                      <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="3" result="glow"/>
+                        <feComposite in="SourceGraphic" in2="glow" operator="over"/>
+                      </filter>
+                    </defs>
+
+                    <!-- Horizontal Grid Guide Lines -->
+                    <line x1="0" y1="20" x2="340" y2="20" stroke="rgba(255,255,255,0.05)" stroke-dasharray="3 3"/>
+                    <line x1="0" y1="60" x2="340" y2="60" stroke="rgba(255,255,255,0.05)" stroke-dasharray="3 3"/>
+                    <line x1="0" y1="100" x2="340" y2="100" stroke="rgba(255,255,255,0.05)" stroke-dasharray="3 3"/>
+
+                    <!-- Area Fill -->
+                    <path id="chartArea" class="chart-area" d="" fill="url(#areaGrad)" />
+
+                    <!-- Forecast Line (Dashed) -->
+                    <path id="chartForecastLine" class="chart-forecast-line" d="" fill="none" stroke="#22d3ee" stroke-width="2" stroke-dasharray="4 4" opacity="0.85" />
+
+                    <!-- Solid Actual Line -->
+                    <path id="chartSolidLine" class="chart-solid-line" d="" fill="none" stroke="#00bcd4" stroke-width="2.5" filter="url(#glow)" />
+
+                    <!-- Interactive Data Points -->
+                    <g id="chartPoints"></g>
+                  </svg>
+
+                  <!-- Chart Tooltip -->
+                  <div class="chart-tooltip" id="chartTooltip"></div>
+                </div>
+
+                <!-- Month Labels -->
+                <div class="chart-x-labels" id="xLabels">
+                  <span>Feb</span>
+                  <span>Mar</span>
+                  <span>Apr</span>
+                  <span>May</span>
+                  <span>Jun</span>
+                  <span>Jul</span>
+                </div>
+              </div>
+
+              <!-- Bar Chart Card -->
+              <div class="chart-box bar-chart-box">
+                <div class="chart-header">
+                  <span class="chart-title" id="barChartTitle">Sales by channel</span>
+                </div>
+                <div class="bars-container" id="barsContainer">
+                  <div class="bar-col">
+                    <div class="bar-track">
+                      <div class="bar-fill" id="bar1" style="height: 75%;"></div>
+                    </div>
+                    <span class="bar-label" id="barLbl1">Partner</span>
+                  </div>
+                  <div class="bar-col">
+                    <div class="bar-track">
+                      <div class="bar-fill" id="bar2" style="height: 60%;"></div>
+                    </div>
+                    <span class="bar-label" id="barLbl2">Digital</span>
+                  </div>
+                  <div class="bar-col">
+                    <div class="bar-track">
+                      <div class="bar-fill" id="bar3" style="height: 38%;"></div>
+                    </div>
+                    <span class="bar-label" id="barLbl3">Other</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Dashboard Interactive Hint -->
+            <div class="dash-footer-hint">
+              <span class="hint-icon">✦</span> Click on metrics or pipeline stages to interactively explore intelligence data
+            </div>
+
+          </div>
+
+          <!-- Process Flow / Stepper Tags directly below Dashboard Card -->
+          <div class="flow-stepper" id="flowStepper">
+            <button class="flow-pill active" data-flow="data">
+              <span>DATA</span>
+            </button>
+            <span class="flow-sep">&gt;</span>
+            <button class="flow-pill" data-flow="analytics">
+              <span>ANALYTICS</span>
+            </button>
+            <span class="flow-sep">&gt;</span>
+            <button class="flow-pill" data-flow="insights">
+              <span>INSIGHTS</span>
+            </button>
+            <span class="flow-sep">&gt;</span>
+            <button class="flow-pill" data-flow="prediction">
+              <span>PREDICTION</span>
+            </button>
+            <span class="flow-sep">&gt;</span>
+            <button class="flow-pill" data-flow="decision">
+              <span>DECISION</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 2: From Data to Decisions -->
+    <section class="section-decisions reveal-on-scroll" id="capabilities">
+      <div class="section-container">
+        
+        <!-- Header Text -->
+        <div class="section-header reveal-on-scroll">
+          <h2 class="section-title">Turning Business Data into <span class="highlight">Actionable Intelligence</span></h2>
+          <p class="section-description">
+            Businesses generate data across customers, sales, finance, operations, and digital platforms. We transform this data into structured insights, predictive intelligence, and decision support that helps organizations understand what is happening, why it is happening, and what actions can be considered.
+          </p>
+        </div>
+
+        <!-- Chevron Process Flow -->
+        <div class="chevron-pipeline-wrapper reveal-on-scroll">
+          <div class="chevron-track" id="chevronTrack">
+            
+            <!-- Step 1: Data -->
+            <div class="chevron-item" data-step="1">
+              <div class="chevron-shape">
+                <span class="chevron-label">Data</span>
+              </div>
+              <div class="chevron-sub">Connected sources</div>
+            </div>
+
+            <!-- Step 2: Analyze -->
+            <div class="chevron-item" data-step="2">
+              <div class="chevron-shape">
+                <span class="chevron-label">Analyze</span>
+              </div>
+              <div class="chevron-sub">Explore signals</div>
+            </div>
+
+            <!-- Step 3: Understand (Active Teal) -->
+            <div class="chevron-item active-teal" data-step="3">
+              <div class="chevron-shape">
+                <span class="chevron-label">Understand</span>
+              </div>
+              <div class="chevron-sub">Find meaning</div>
+            </div>
+
+            <!-- Step 4: Predict -->
+            <div class="chevron-item" data-step="4">
+              <div class="chevron-shape">
+                <span class="chevron-label">Predict</span>
+              </div>
+              <div class="chevron-sub">Model outcomes</div>
+            </div>
+
+            <!-- Step 5: Decide -->
+            <div class="chevron-item" data-step="5">
+              <div class="chevron-shape">
+                <span class="chevron-label">Decide</span>
+              </div>
+              <div class="chevron-sub">Evaluate options</div>
+            </div>
+
+            <!-- Step 6: Act (Accent Orange) -->
+            <div class="chevron-item active-orange" data-step="6">
+              <div class="chevron-shape">
+                <span class="chevron-label">Act</span>
+              </div>
+              <div class="chevron-sub">Create impact</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Our Data Science & Analytics Capabilities -->
+    <section class="section-capabilities" id="capabilities-section">
+      <div class="section-container">
+        
+        <!-- Header Text -->
+        <div class="section-header reveal-on-scroll">
+          <h2 class="section-title">Powering Better Decisions with <span class="highlight">Data Intelligence</span></h2>
+        </div>
+
+        <!-- Capabilities Cards Grid (Equal Size Boxes) -->
+        <div class="capabilities-grid reveal-on-scroll">
+          
+          <!-- Card 01: Data Analytics -->
+          <div class="cap-card" data-cap-target="data-analytics">
+            <div class="cap-card-top">
+              <span class="cap-num">01</span>
+              <div class="cap-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                  <path d="M7 17v-4M12 17V7M17 17v-8"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="cap-title">Data Analytics</h3>
+            <p class="cap-desc">
+              Analyze business data to uncover patterns, trends, relationships, and opportunities. Our analytics solutions help organizations understand performance and identify the factors driving business outcomes.
+            </p>
+            <div class="cap-tags">
+              <span class="cap-tag">Descriptive Analytics</span>
+              <span class="cap-tag">Diagnostic Analytics</span>
+              <span class="cap-tag">Exploratory Data Analysis</span>
+              <span class="cap-tag">Statistical Analysis</span>
+              <span class="cap-tag">Trend Analysis</span>
+              <span class="cap-tag">Customer Analytics</span>
+              <span class="cap-tag">Operational Analytics</span>
+            </div>
+            <div class="cap-card-footer">
+              <button class="cap-btn-link" data-open-cap="data-analytics">
+                <span>Explore Capability</span>
+                <span class="cap-arrow">&rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 02: Data Science & Advanced Analytics -->
+          <div class="cap-card" data-cap-target="data-science">
+            <div class="cap-card-top">
+              <span class="cap-num">02</span>
+              <div class="cap-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="cap-title">Data Science &amp; Advanced Analytics</h3>
+            <p class="cap-desc">
+              Apply statistical modeling, machine learning, and advanced analytical techniques to solve complex business problems and predict future outcomes.
+            </p>
+            <div class="cap-tags">
+              <span class="cap-tag">Machine Learning</span>
+              <span class="cap-tag">Predictive Modeling</span>
+              <span class="cap-tag">Regression Analysis</span>
+              <span class="cap-tag">Classification</span>
+              <span class="cap-tag">Clustering</span>
+              <span class="cap-tag">Forecasting</span>
+              <span class="cap-tag">Anomaly Detection</span>
+            </div>
+            <div class="cap-card-footer">
+              <button class="cap-btn-link" data-open-cap="data-science">
+                <span>Explore Capability</span>
+                <span class="cap-arrow">&rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 03: Business Intelligence -->
+          <div class="cap-card" data-cap-target="business-intelligence">
+            <div class="cap-card-top">
+              <span class="cap-num">03</span>
+              <div class="cap-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                  <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="cap-title">Business Intelligence</h3>
+            <p class="cap-desc">
+              Transform business data into reliable reports, KPIs, dashboards, and performance insights that enable organizations to monitor and understand their business.
+            </p>
+            <div class="cap-tags">
+              <span class="cap-tag">Executive Dashboards</span>
+              <span class="cap-tag">Automated Reporting</span>
+              <span class="cap-tag">Self-Service BI</span>
+              <span class="cap-tag">Data Warehousing</span>
+              <span class="cap-tag">Real-time Monitoring</span>
+              <span class="cap-tag">Governance &amp; Security</span>
+            </div>
+            <div class="cap-card-footer">
+              <button class="cap-btn-link" data-open-cap="business-intelligence">
+                <span>Explore Capability</span>
+                <span class="cap-arrow">&rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 04: Decision Intelligence -->
+          <div class="cap-card" data-cap-target="decision-intelligence">
+            <div class="cap-card-top">
+              <span class="cap-num">04</span>
+              <div class="cap-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="6" height="6" rx="1"></rect>
+                  <rect x="16" y="3" width="6" height="6" rx="1"></rect>
+                  <rect x="9" y="15" width="6" height="6" rx="1"></rect>
+                  <path d="M5 9v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9"></path>
+                  <path d="M12 14v1"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="cap-title">Decision Intelligence</h3>
+            <p class="cap-desc">
+              Combine data, analytics, AI, business context, and decision models to support complex business decisions and identify potential actions.
+            </p>
+            <div class="cap-tags">
+              <span class="cap-tag">Decision Modeling</span>
+              <span class="cap-tag">Scenario Analysis</span>
+              <span class="cap-tag">What-if Analysis</span>
+              <span class="cap-tag">Prescriptive Analytics</span>
+              <span class="cap-tag">Optimization</span>
+              <span class="cap-tag">Recommendation Engines</span>
+            </div>
+            <div class="cap-card-footer">
+              <button class="cap-btn-link" data-open-cap="decision-intelligence">
+                <span>Explore Capability</span>
+                <span class="cap-arrow">&rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 05: Data Visualization & Storytelling -->
+          <div class="cap-card" data-cap-target="data-viz">
+            <div class="cap-card-top">
+              <span class="cap-num">05</span>
+              <div class="cap-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="cap-title">Data Visualization &amp; Storytelling</h3>
+            <p class="cap-desc">
+              Transform complex datasets into clear visual experiences that make important information easier to understand, communicate, and act upon.
+            </p>
+            <div class="cap-tags">
+              <span class="cap-tag">Interactive Dashboards</span>
+              <span class="cap-tag">Executive Dashboards</span>
+              <span class="cap-tag">KPI Visualization</span>
+              <span class="cap-tag">Charts &amp; Reports</span>
+              <span class="cap-tag">Trend Visualization</span>
+              <span class="cap-tag">Geographic Visualization</span>
+              <span class="cap-tag">Data Storytelling</span>
+            </div>
+            <div class="cap-card-footer">
+              <button class="cap-btn-link" data-open-cap="data-viz">
+                <span>Explore Capability</span>
+                <span class="cap-arrow">&rarr;</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Analytics Built Around Business Needs (Crisp White & Light Blue Theme) -->
+    <section class="section-business-needs reveal-on-scroll" id="intelligence">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-header-dark reveal-on-scroll">
+          <h2 class="section-title-white">Analytics Built Around <span class="highlight">Business Needs</span></h2>
+        </div>
+
+        <!-- Business Needs List Rows -->
+        <div class="business-needs-list reveal-on-scroll">
+          
+          <!-- Row 01: Customer Intelligence -->
+          <div class="need-row">
+            <div class="need-left">
+              <span class="need-num">01</span>
+              <div class="need-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="need-info">
+                <h3 class="need-title">Customer Intelligence</h3>
+                <p class="need-desc">
+                  Understand customer behavior, preferences, engagement, and value to create more relevant experiences and improve retention.
+                </p>
+              </div>
+            </div>
+            <div class="need-right">
+              <span class="need-key-label">KEY AREAS</span>
+              <p class="need-key-tags">
+                <span>Customer Segmentation</span> &bull;
+                <span>Customer Lifetime Value</span> &bull;
+                <span>Churn Analysis</span> &bull;
+                <span>Customer Journey Analytics</span> &bull;
+                <span>Recommendations</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Row 02: Sales Intelligence -->
+          <div class="need-row">
+            <div class="need-left">
+              <span class="need-num">02</span>
+              <div class="need-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <div class="need-info">
+                <h3 class="need-title">Sales Intelligence</h3>
+                <p class="need-desc">
+                  Turn sales and revenue data into insights that help organizations understand performance, identify opportunities, and improve conversion.
+                </p>
+              </div>
+            </div>
+            <div class="need-right">
+              <span class="need-key-label">KEY AREAS</span>
+              <p class="need-key-tags">
+                <span>Sales Performance</span> &bull;
+                <span>Revenue Analysis</span> &bull;
+                <span>Demand Forecasting</span> &bull;
+                <span>Lead Analytics</span> &bull;
+                <span>Conversion Analysis</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Row 03: Marketing Intelligence -->
+          <div class="need-row">
+            <div class="need-left">
+              <span class="need-num">03</span>
+              <div class="need-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <div class="need-info">
+                <h3 class="need-title">Marketing Intelligence</h3>
+                <p class="need-desc">
+                  Analyze campaigns, customer segments, channels, and marketing performance to understand what drives engagement and business value.
+                </p>
+              </div>
+            </div>
+            <div class="need-right">
+              <span class="need-key-label">KEY AREAS</span>
+              <p class="need-key-tags">
+                <span>Campaign Analytics</span> &bull;
+                <span>Attribution</span> &bull;
+                <span>Customer Segmentation</span> &bull;
+                <span>Marketing Performance</span> &bull;
+                <span>ROI Analysis</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Row 04: Operational Intelligence -->
+          <div class="need-row">
+            <div class="need-left">
+              <span class="need-num">04</span>
+              <div class="need-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+              <div class="need-info">
+                <h3 class="need-title">Operational Intelligence</h3>
+                <p class="need-desc">
+                  Use operational data to identify bottlenecks, inefficiencies, and optimization opportunities across business processes.
+                </p>
+              </div>
+            </div>
+            <div class="need-right">
+              <span class="need-key-label">KEY AREAS</span>
+              <p class="need-key-tags">
+                <span>Process Analytics</span> &bull;
+                <span>Performance Monitoring</span> &bull;
+                <span>Resource Optimization</span> &bull;
+                <span>Predictive Maintenance</span> &bull;
+                <span>Supply Chain Analytics</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Row 05: Financial Intelligence -->
+          <div class="need-row">
+            <div class="need-left">
+              <span class="need-num">05</span>
+              <div class="need-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 6v12M15 9.5a2.5 2.5 0 0 0-5 0c0 2.5 5 1.5 5 4a2.5 2.5 0 0 1-5 0"></path>
+                </svg>
+              </div>
+              <div class="need-info">
+                <h3 class="need-title">Financial Intelligence</h3>
+                <p class="need-desc">
+                  Analyze financial and business data to understand revenue, profitability, expenses, cash flow, and financial risk.
+                </p>
+              </div>
+            </div>
+            <div class="need-right">
+              <span class="need-key-label">KEY AREAS</span>
+              <p class="need-key-tags">
+                <span>Financial Analytics</span> &bull;
+                <span>Profitability Analysis</span> &bull;
+                <span>Financial Forecasting</span> &bull;
+                <span>Risk Analytics</span> &bull;
+                <span>Fraud Detection</span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 5: Predictive & Prescriptive Analytics (Staircase Maturity Model) -->
+    <section class="section-maturity reveal-on-scroll" id="technology">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="maturity-header reveal-on-scroll">
+          <h2 class="maturity-title">Predictive &amp; <span class="highlight">Prescriptive Analytics</span></h2>
+          <p class="maturity-subtitle">
+            From understanding the past to shaping the future. Our approach moves from historical performance to future possibilities and the actions worth considering.
+          </p>
+        </div>
+
+        <!-- Ascending Staircase Steps -->
+        <div class="staircase-wrapper reveal-on-scroll">
+          <div class="staircase-grid">
+            
+            <!-- Step 1: Descriptive -->
+            <div class="stair-step step-1">
+              <div class="stair-top-bar bar-teal"></div>
+              <div class="stair-body">
+                <h3 class="stair-name">Descriptive</h3>
+                <h4 class="stair-question">What happened?</h4>
+                <p class="stair-desc">Understand historical performance and outcomes.</p>
+              </div>
+            </div>
+
+            <!-- Step 2: Diagnostic -->
+            <div class="stair-step step-2">
+              <div class="stair-top-bar bar-teal"></div>
+              <div class="stair-body">
+                <h3 class="stair-name">Diagnostic</h3>
+                <h4 class="stair-question">Why did it happen?</h4>
+                <p class="stair-desc">Identify the factors and patterns behind outcomes.</p>
+              </div>
+            </div>
+
+            <!-- Step 3: Predictive -->
+            <div class="stair-step step-3">
+              <div class="stair-top-bar bar-teal"></div>
+              <div class="stair-body">
+                <h3 class="stair-name">Predictive</h3>
+                <h4 class="stair-question">What could happen?</h4>
+                <p class="stair-desc">Forecast future outcomes using data and models.</p>
+              </div>
+            </div>
+
+            <!-- Step 4: Prescriptive -->
+            <div class="stair-step step-4">
+              <div class="stair-top-bar bar-teal"></div>
+              <div class="stair-body">
+                <h3 class="stair-name">Prescriptive</h3>
+                <h4 class="stair-question">What actions can be considered?</h4>
+                <p class="stair-desc">Evaluate actions using predictions, business rules, and optimization.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 6: Intelligence-Powered Dashboards Showcase -->
+    <section class="section-dashboards-showcase reveal-on-scroll" id="dashboards">
+      <div class="section-container">
+        
+        <div class="dashboards-header reveal-on-scroll">
+          <h2 class="dashboards-title">See the Business. Understand the Numbers. <span class="highlight">Act Faster.</span></h2>
+          <p class="dashboards-subtitle">
+            We create interactive dashboards that bring KPIs, trends, performance indicators, and business insights into a unified view.
+          </p>
+        </div>
+
+        <!-- Central Interactive Showcase Dashboard Card -->
+        <div class="showcase-dashboard-wrap reveal-on-scroll">
+          <div class="showcase-dashboard-card" id="showcaseDashboardCard">
+            
+            <!-- Header -->
+            <div class="showcase-dash-header">
+              <div class="showcase-dash-info">
+                <h3 class="showcase-dash-title" id="showcaseDashTitle">Business Intelligence</h3>
+                <p class="showcase-dash-sub" id="showcaseDashSubtitle">Performance overview &bull; Updated today</p>
+              </div>
+              <div class="showcase-dash-live-badge">
+                <span class="pulse-dot"></span>
+                <span>Live</span>
+              </div>
+            </div>
+
+            <!-- 4 KPIs Grid -->
+            <div class="showcase-kpi-grid">
+              <div class="showcase-kpi-box">
+                <div class="showcase-kpi-top">
+                  <span class="showcase-kpi-icon" id="scKpiIcon1">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M15 9.5a3.5 3.5 0 0 0-7 0c0 2 1.5 3 3.5 3s3.5 1 3.5 3a3.5 3.5 0 0 1-7 0"/></svg>
+                  </span>
+                  <span class="showcase-kpi-growth" id="scKpiGrowth1"><span class="growth-arrow">&nearr;</span> <span id="scKpiGrowthVal1">8.4%</span></span>
+                </div>
+                <div class="showcase-kpi-label" id="scKpiLabel1">REVENUE</div>
+                <div class="showcase-kpi-value" id="scKpiVal1">$4.82M</div>
+              </div>
+
+              <div class="showcase-kpi-box">
+                <div class="showcase-kpi-top">
+                  <span class="showcase-kpi-icon" id="scKpiIcon2">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                  </span>
+                  <span class="showcase-kpi-growth" id="scKpiGrowth2"><span class="growth-arrow">&nearr;</span> <span id="scKpiGrowthVal2">2.1%</span></span>
+                </div>
+                <div class="showcase-kpi-label" id="scKpiLabel2">CONVERSION</div>
+                <div class="showcase-kpi-value" id="scKpiVal2">12.6%</div>
+              </div>
+
+              <div class="showcase-kpi-box">
+                <div class="showcase-kpi-top">
+                  <span class="showcase-kpi-icon" id="scKpiIcon3">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </span>
+                  <span class="showcase-kpi-growth" id="scKpiGrowth3"><span class="growth-arrow">&nearr;</span> <span id="scKpiGrowthVal3">6.8%</span></span>
+                </div>
+                <div class="showcase-kpi-label" id="scKpiLabel3">CUSTOMERS</div>
+                <div class="showcase-kpi-value" id="scKpiVal3">18,420</div>
+              </div>
+
+              <div class="showcase-kpi-box">
+                <div class="showcase-kpi-top">
+                  <span class="showcase-kpi-icon" id="scKpiIcon4">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                  </span>
+                  <span class="showcase-kpi-growth" id="scKpiGrowth4"><span class="growth-arrow">&nearr;</span> <span id="scKpiGrowthVal4">3.7%</span></span>
+                </div>
+                <div class="showcase-kpi-label" id="scKpiLabel4">PERFORMANCE</div>
+                <div class="showcase-kpi-value" id="scKpiVal4">94.2</div>
+              </div>
+            </div>
+
+            <!-- Charts Row -->
+            <div class="showcase-charts-row">
+              <div class="showcase-chart-box">
+                <div class="showcase-chart-head">
+                  <span class="showcase-chart-title" id="scLineChartTitle">Revenue & forecast</span>
+                  <span class="showcase-chart-badge" id="scLineChartBadge">7 months</span>
+                </div>
+                <div class="showcase-svg-container">
+                  <svg class="showcase-line-svg" viewBox="0 0 460 140" id="scLineSvg">
+                    <defs>
+                      <linearGradient id="scAreaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#2ec4b6" stop-opacity="0.3"/>
+                        <stop offset="100%" stop-color="#2ec4b6" stop-opacity="0.0"/>
+                      </linearGradient>
+                    </defs>
+                    <path class="sc-chart-area" id="scChartArea" d="" fill="url(#scAreaGrad)" />
+                    <path class="sc-chart-forecast" id="scChartForecast" d="" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="5,5" />
+                    <path class="sc-chart-solid" id="scChartSolid" d="" fill="none" stroke="#2ec4b6" stroke-width="2.5" stroke-linecap="round" />
+                    <g id="scPointsGroup"></g>
+                  </svg>
+                  <div class="sc-tooltip" id="scTooltip"></div>
+                </div>
+                <div class="showcase-x-labels" id="scXLabels">
+                  <span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span>
+                </div>
+              </div>
+
+              <div class="showcase-chart-box">
+                <div class="showcase-chart-head">
+                  <span class="showcase-chart-title" id="scBarChartTitle">Sales by channel</span>
+                </div>
+                <div class="showcase-bars-container" id="scBarsContainer">
+                  <!-- Rendered dynamically -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Bottom Dashboard Switcher Tabs with dots -->
+        <div class="dashboards-nav-pills reveal-on-scroll" id="dashboardsNavPills">
+          <button class="dash-pill-btn active" data-type="executive">
+            <span class="pill-dot"></span>
+            <span>Executive Dashboards</span>
+          </button>
+          <button class="dash-pill-btn" data-type="sales">
+            <span class="pill-dot"></span>
+            <span>Sales Dashboards</span>
+          </button>
+          <button class="dash-pill-btn" data-type="marketing">
+            <span class="pill-dot"></span>
+            <span>Marketing Dashboards</span>
+          </button>
+          <button class="dash-pill-btn" data-type="finance">
+            <span class="pill-dot"></span>
+            <span>Finance Dashboards</span>
+          </button>
+          <button class="dash-pill-btn" data-type="operations">
+            <span class="pill-dot"></span>
+            <span>Operations Dashboards</span>
+          </button>
+          <button class="dash-pill-btn" data-type="customer">
+            <span class="pill-dot"></span>
+            <span>Customer Dashboards</span>
+          </button>
+          <button class="dash-pill-btn" data-type="supplychain">
+            <span class="pill-dot"></span>
+            <span>Supply Chain Dashboards</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 7: Our Analytics Approach (Vertical Pipeline Timeline) -->
+    <section class="section-analytics-approach reveal-on-scroll" id="approach">
+      <div class="section-container">
+        
+        <div class="approach-header reveal-on-scroll">
+          <h2 class="approach-title">Our Proven <span class="highlight">Analytics Approach</span></h2>
+          <p class="approach-subtitle">From business questions to actionable intelligence.</p>
+        </div>
+
+        <div class="approach-timeline reveal-on-scroll">
+          
+          <!-- Step 1 -->
+          <div class="approach-step">
+            <div class="step-indicator">
+              <div class="step-num-badge">1</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-heading">Understand</h3>
+              <p class="step-text">Understand your business objectives, challenges, data sources, and decision requirements.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="approach-step">
+            <div class="step-indicator">
+              <div class="step-num-badge">2</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-heading">Prepare</h3>
+              <p class="step-text">Collect, integrate, clean, transform, and structure data into a reliable foundation.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="approach-step">
+            <div class="step-indicator">
+              <div class="step-num-badge">3</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-heading">Analyze</h3>
+              <p class="step-text">Apply statistics, machine learning, and domain knowledge to uncover insight.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="approach-step">
+            <div class="step-indicator">
+              <div class="step-num-badge">4</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-heading">Visualize</h3>
+              <p class="step-text">Turn findings into dashboards and reports that communicate clearly.</p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="approach-step">
+            <div class="step-indicator">
+              <div class="step-num-badge">5</div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-heading">Operationalize</h3>
+              <p class="step-text">Connect insights and recommendations to business processes and decision workflows.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 8: Modern Data & Analytics Technologies -->
+    <section class="section-tech-stack reveal-on-scroll" id="technology">
+      <div class="section-container">
+        
+        <div class="tech-header reveal-on-scroll">
+          <h2 class="tech-title">Built with Modern Data &amp; <span class="highlight">Analytics Technologies</span></h2>
+        </div>
+
+        <div class="tech-cards-grid reveal-on-scroll">
+          
+          <div class="tech-card">
+            <h3 class="tech-card-title teal-title">Data &amp; engineering</h3>
+            <p class="tech-card-desc">Python, SQL, Pandas, NumPy, Apache Spark</p>
+          </div>
+
+          <div class="tech-card">
+            <h3 class="tech-card-title teal-title">Analytics &amp; BI</h3>
+            <p class="tech-card-desc">Power BI, Tableau, Excel, Looker</p>
+          </div>
+
+          <div class="tech-card">
+            <h3 class="tech-card-title teal-title">Data science</h3>
+            <p class="tech-card-desc">Scikit-learn, TensorFlow, PyTorch, MLflow</p>
+          </div>
+
+          <div class="tech-card">
+            <h3 class="tech-card-title teal-title">Data platforms</h3>
+            <p class="tech-card-desc">Snowflake, Databricks, Microsoft Fabric, AWS, Azure, Google Cloud</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 9: Analytics Built Around Your Industry -->
+    <section class="section-industries-grid reveal-on-scroll" id="industries">
+      <div class="section-container">
+        
+        <div class="industries-header reveal-on-scroll">
+          <h2 class="industries-title">Analytics Built Around <span class="highlight">Your Industry</span></h2>
+        </div>
+
+        <div class="industries-cards-grid reveal-on-scroll">
+          
+          <div class="industry-card">
+            <h3 class="industry-card-title">Healthcare</h3>
+            <p class="industry-card-desc">Analyze clinical, operational, financial, and patient data for better planning and efficiency.</p>
+          </div>
+
+          <div class="industry-card">
+            <h3 class="industry-card-title">Financial services</h3>
+            <p class="industry-card-desc">Use transaction and risk data for fraud detection, forecasting, and customer intelligence.</p>
+          </div>
+
+          <div class="industry-card">
+            <h3 class="industry-card-title">Retail</h3>
+            <p class="industry-card-desc">Improve demand planning, pricing, and customer experience.</p>
+          </div>
+
+          <div class="industry-card">
+            <h3 class="industry-card-title">Manufacturing</h3>
+            <p class="industry-card-desc">Improve efficiency, quality, and maintenance using production and equipment data.</p>
+          </div>
+
+          <div class="industry-card">
+            <h3 class="industry-card-title">Automotive</h3>
+            <p class="industry-card-desc">Support connected mobility, predictive maintenance, and optimization.</p>
+          </div>
+
+          <div class="industry-card">
+            <h3 class="industry-card-title">Telecom &amp; media</h3>
+            <p class="industry-card-desc">Improve retention, personalization, and network and content performance.</p>
+          </div>
+
+          <div class="industry-card">
+            <h3 class="industry-card-title">Logistics &amp; supply chain</h3>
+            <p class="industry-card-desc">Improve forecasting, planning, and delivery efficiency.</p>
+          </div>
+
+          <div class="industry-card">
+            <h3 class="industry-card-title">Technology</h3>
+            <p class="industry-card-desc">Optimize products, retain customers, and grow the business.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 10: Business Outcomes (Turning Analytics into Business Impact) -->
+    <section class="section-business-outcomes reveal-on-scroll" id="outcomes">
+      <div class="section-container">
+        
+        <div class="outcomes-header reveal-on-scroll">
+          <h2 class="outcomes-title">Turning Analytics into <span class="highlight">Business Impact</span></h2>
+        </div>
+
+        <div class="outcomes-grid reveal-on-scroll">
+          
+          <!-- Outcome 1 -->
+          <div class="outcome-cell">
+            <span class="outcome-num">01</span>
+            <h3 class="outcome-heading">Better Visibility</h3>
+            <p class="outcome-desc">Bring data from multiple business areas into a unified view of performance, trends, opportunities, and risks.</p>
+          </div>
+
+          <!-- Outcome 2 -->
+          <div class="outcome-cell">
+            <span class="outcome-num">02</span>
+            <h3 class="outcome-heading">Faster Decisions</h3>
+            <p class="outcome-desc">Provide timely and relevant insights that help decision-makers evaluate situations and respond with greater clarity.</p>
+          </div>
+
+          <!-- Outcome 3 -->
+          <div class="outcome-cell">
+            <span class="outcome-num">03</span>
+            <h3 class="outcome-heading">Predictive Insights</h3>
+            <p class="outcome-desc">Identify patterns and forecast potential outcomes to help organizations prepare for future business conditions.</p>
+          </div>
+
+          <!-- Outcome 4 -->
+          <div class="outcome-cell">
+            <span class="outcome-num">04</span>
+            <h3 class="outcome-heading">Operational Efficiency</h3>
+            <p class="outcome-desc">Identify bottlenecks, inefficiencies, and resource gaps to improve productivity and optimize operations.</p>
+          </div>
+
+          <!-- Outcome 5 -->
+          <div class="outcome-cell">
+            <span class="outcome-num">05</span>
+            <h3 class="outcome-heading">Customer Understanding</h3>
+            <p class="outcome-desc">Turn customer data into insights that help organizations understand behavior, improve experiences, and strengthen retention.</p>
+          </div>
+
+          <!-- Outcome 6 -->
+          <div class="outcome-cell">
+            <span class="outcome-num">06</span>
+            <h3 class="outcome-heading">Business Growth</h3>
+            <p class="outcome-desc">Identify opportunities across customers, markets, products, and operations to support sustainable business growth.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 11: Real-World Analytics Use Cases (Clean Solid Cards - No Background Grids) -->
+    <section class="section-usecases reveal-on-scroll" id="usecases">
+      <div class="section-container">
+        
+        <div class="usecases-header reveal-on-scroll">
+          <h2 class="usecases-title">Real-World <span class="highlight">Analytics Use Cases</span></h2>
+        </div>
+
+        <div class="usecases-grid reveal-on-scroll">
+          
+          <!-- Use Case 01 -->
+          <div class="usecase-card">
+            <div class="usecase-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <span class="usecase-eyebrow">USE CASE 01</span>
+            <h3 class="usecase-heading">Customer Churn Prediction</h3>
+            <p class="usecase-desc">Identify customers at risk and understand the signals behind changing engagement.</p>
+          </div>
+
+          <!-- Use Case 02 -->
+          <div class="usecase-card">
+            <div class="usecase-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            </div>
+            <span class="usecase-eyebrow">USE CASE 02</span>
+            <h3 class="usecase-heading">Sales Forecasting</h3>
+            <p class="usecase-desc">Model future demand and revenue using historical and current performance data.</p>
+          </div>
+
+          <!-- Use Case 03 -->
+          <div class="usecase-card">
+            <div class="usecase-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            </div>
+            <span class="usecase-eyebrow">USE CASE 03</span>
+            <h3 class="usecase-heading">Fraud Detection</h3>
+            <p class="usecase-desc">Detect unusual transaction patterns and support risk-based investigations.</p>
+          </div>
+
+          <!-- Use Case 04 -->
+          <div class="usecase-card">
+            <div class="usecase-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 10 10h-10V2z"/></svg>
+            </div>
+            <span class="usecase-eyebrow">USE CASE 04</span>
+            <h3 class="usecase-heading">Customer Segmentation</h3>
+            <p class="usecase-desc">Group customers by meaningful behavioral, value, and engagement attributes.</p>
+          </div>
+
+          <!-- Use Case 05 -->
+          <div class="usecase-card">
+            <div class="usecase-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <span class="usecase-eyebrow">USE CASE 05</span>
+            <h3 class="usecase-heading">Predictive Maintenance</h3>
+            <p class="usecase-desc">Anticipate asset issues and prioritize maintenance using operational signals.</p>
+          </div>
+
+          <!-- Use Case 06 -->
+          <div class="usecase-card">
+            <div class="usecase-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <span class="usecase-eyebrow">USE CASE 06</span>
+            <h3 class="usecase-heading">Marketing Analytics</h3>
+            <p class="usecase-desc">Connect campaign and channel performance to customer and business outcomes.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 12: Why Choose Our Data & Analytics Services -->
+    <section class="section-why-choose reveal-on-scroll" id="why-choose-us">
+      <div class="section-container">
+        
+        <div class="why-header reveal-on-scroll">
+          <h2 class="why-title">Why choose our <span class="highlight">data &amp; analytics services?</span></h2>
+        </div>
+
+        <div class="why-grid reveal-on-scroll">
+          
+          <div class="why-item">
+            <div class="why-check">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ec4b6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="why-content">
+              <h3 class="why-item-title">Business-Focused Analytics</h3>
+              <p class="why-item-desc">Align analytical solutions with business objectives to deliver insights that are relevant and actionable.</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-check">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ec4b6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="why-content">
+              <h3 class="why-item-title">Scalable Solutions</h3>
+              <p class="why-item-desc">Build analytics solutions that can adapt to growing data volumes, users, and evolving business requirements.</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-check">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ec4b6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="why-content">
+              <h3 class="why-item-title">Actionable Insights</h3>
+              <p class="why-item-desc">Go beyond reporting to uncover insights that help teams understand opportunities, challenges, and potential actions.</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-check">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ec4b6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="why-content">
+              <h3 class="why-item-title">Advanced Analytics</h3>
+              <p class="why-item-desc">Apply statistical modeling, machine learning, forecasting, and advanced analytical techniques to complex business problems.</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-check">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ec4b6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="why-content">
+              <h3 class="why-item-title">Interactive Visualization</h3>
+              <p class="why-item-desc">Transform complex information into intuitive dashboards and visual experiences that make insights easier to understand.</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-check">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ec4b6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="why-content">
+              <h3 class="why-item-title">Decision Support</h3>
+              <p class="why-item-desc">Combine data, analytics, business context, and intelligent recommendations to support informed business decisions.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 13: Bottom CTA Banner (Turn your data into intelligence) -->
+    <section class="section-bottom-cta reveal-on-scroll" id="contact">
+      <div class="section-container">
+        
+        <div class="bottom-cta-content reveal-on-scroll">
+          <h2 class="bottom-cta-title">Ready to Turn Data into <span class="highlight">Intelligent Decisions?</span></h2>
+          <p class="bottom-cta-desc">
+            Transform complex business data into meaningful insights, predictive intelligence, and informed decisions.
+          </p>
+
+          <div class="bottom-cta-buttons">
+            <a href="#contact" class="btn btn-amber">
+              <span>Talk to our data experts</span>
+            </a>
+            <a href="#capabilities" class="btn btn-outline-slate">
+              <span>Explore our capabilities</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Dedicated Full-Page Capability Detail View -->
+  <div class="capability-modal-page" id="capabilityModalPage" aria-hidden="true">
+    <div class="modal-page-content">
+      
+      <!-- Top Clean Header -->
+      <div class="modal-navbar">
+        <div class="modal-nav-container">
+          <button class="modal-back-btn" id="modalBackBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Back to Capabilities</span>
+          </button>
+
+          <div class="modal-active-badge" id="modalActiveBadge">
+            Data Analytics
+          </div>
+
+          <div class="modal-right-actions">
+            <a href="#contact" class="btn btn-primary btn-modal-cta" id="modalCtaBtn">
+              <span>Talk to Our Experts</span>
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <button class="modal-close-icon-btn" id="closeCapabilityModal" title="Close">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Capability Detail Content -->
+      <div class="modal-body-container">
+        <!-- Single Data Analytics Pill -->
+        <div class="modal-tab-pills-wrap">
+          <p class="modal-tab-sub">From understanding your data to acting on it.</p>
+          <div class="modal-tab-pills" id="modalTabPills">
+            <button class="modal-tab-pill active" data-tab="data-analytics">Data analytics</button>
+          </div>
+        </div>
+
+        <div class="capability-detail-hero">
+          <h1 class="cap-detail-title" id="capDetailTitle">Data Analytics</h1>
+          <p class="cap-detail-headline" id="explorerHeadline">
+            Analyze business data to uncover patterns, trends, relationships, and opportunities.
+          </p>
+        </div>
+
+        <!-- Sub-Cards Explanation Grid -->
+        <div class="explorer-cards-grid" id="explorerCardsGrid">
+          <!-- Populated dynamically via script.js for the clicked capability -->
+        </div>
+
+        <!-- Bottom Return Bar -->
+        <div class="modal-bottom-actions">
+          <button class="btn btn-outline-dark" id="modalBottomBackBtn">
+            <span>&larr; Back to All Capabilities</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
